@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width , initial-scale=1.0'>
+<style>
+html{
+ background-image:url('check2.jpg');
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-size:cover;
+}
+*{
+ box-sizing:border-box;
+}
+@media only screen and( max-width:600px){
+ div{
+  max-width:100%
+ }
+}
+@media only screen and(max-width:768px){
+ div{
+  max-width:50%;
+ }
+ 
+}
+
+.header{
+ background-color:#ccff00;
+ max-width: 100% ;
+}
+.grid-item1:hover{
+ background-color:#f0e3d0 ;
+}
+.grid-item2:hover{
+ background-color:#e9d4b7 ;
+}
+.grid-item3:hover{
+ background-color:#e1c59d ;
+}
+.grid-item4:hover{
+ background-color:#d9b684 ;
+}
+.grid-item5:hover{
+ background-color:#d6af78 ;
+}
+.grid-item6:hover{
+ background-color:#d2a76b ;
+}
+.grid-item7:hover{
+ background-color:#cea05f ;
+}
+.grid-item8:hover{
+ background-color:#ca9852 ;
+}
+.grid-item9:hover{
+ background-color:#c69146;
+}
+.grid-item10:hover{
+ background-color:#c2893a ;
+}
+.grid-item11:hover{
+ background-color:#b58037 ;
+}
+.grid-item12:hover{
+ background-color:#a97833;
+}
+.grid-item13:hover{
+ background-color:#9c6f2f ;
+}
+.grid-item14:hover{
+ background-color:#8f662b ;
+}
+.grid-item15:hover{
+ background-color:#835d27 ;
+}
+.grid-item16:hover{
+ background-color:#765424;
+}
+.grid-item17:hover{
+ background-color:#6a4b20 ;
+}
+.grid-item18:hover{
+ background-color:#5d421c;
+}
+.grid-item19:hover{
+ background-color:#513918 ;
+}
+.grid-item20:hover{
+ background-color:#443014 ;
+}
+.grid-container{
+ display:grid;
+ grid-template-columns: auto auto auto auto auto;
+ grid-gap : 10px;
+ width:100%;
+ background-color:#2a2a2a;
+ padding: 10px;
+ 
+}
+.grid-item{
+ border: 1px solid rgba(0,0,0,0.8);
+ font-size:30px;
+ text-align:center;
+}
+
+.grid-container > div {
+ background-color:#939393;
+ text-align:center;
+ padding:10px;
+ font-size:50px;
+
+}
+.wait1{
+ background-color:rgb(255,0,0);
+ border: none;
+ color : white;
+ padding: 14 px 60px;
+ text-align: center;
+ display: inline-box;
+ font-size: 80 px;
+ margin: 10 px;
+ cursor:pointer;
+ border-radius: 4px;
+ box-shadow: 2px 2px 5px black;
+ width: 250px ;
+ position absolute;
+ top: 50% ;
+ max-height: 100%;
+ 
+}
+.wrapper{
+ text-align:center;
+}
+
+.wait1:hover{
+ background-color:rgb(139,0,0);
+}
+.demo2{
+ background-color:rgb(0,128,0);
+ border: none;
+ color : white;
+ text-align: center;
+ display: inline-box;
+ font-size: 10 px;
+ cursor:pointer;
+ border-radius: 4px;
+ box-shadow: 2px 2px 5px black;
+ width: 250px ;
+ position :absolute;
+ padding: 14 px 60px;
+ font-size: 80 px;
+ margin: auto;
+ 
+ 
+ }
+.demo2:hover{
+ background-color:rgb(0,100,0);
+}
+.wrapper1{
+ display:flex;
+ justify-content: center;
+
+}
+.wrapper3{
+ text-align:center;
+ font-size:40px;
+}
+.grid-item1{ grid-area: 3 / 2 / 4 / 3;}
+.grid-item2{ grid-area: 1 / 5 / 2 / 6;}
+.grid-item3{ grid-area: 4 / 1 / 5 / 2;}
+.grid-item4{ grid-area: 3 / 5 / 4 / 6;}
+.grid-item5{ grid-area: 4 / 4 / 5 / 5;}
+.grid-item6{ grid-area: 2 / 1 / 3 / 2;}
+.grid-item7{ grid-area: 4 / 3 / 5 / 4;}
+.grid-item8{ grid-area: 1 / 1 / 2 / 2;}
+.grid-item9{ grid-area: 3 / 4 / 4 / 5;}
+.grid-item10{ grid-area: 4 / 2 / 5 / 3;}
+.grid-item11{ grid-area: 1 / 3 / 2 / 4;}
+.grid-item12{ grid-area: 3 / 1 / 4 / 2;}
+.grid-item13{ grid-area: 2 / 5 / 3 / 6;}
+.grid-item14{ grid-area: 1 / 2 / 2 / 3;}
+.grid-item15{ grid-area: 2 / 4 / 3 / 5;}
+.grid-item16{ grid-area: 1 / 4 / 2 / 5;}
+.grid-item17{ grid-area: 2 / 2 / 3 / 3;}
+.grid-item18{ grid-area: 3 / 3 / 4 / 4;}
+.grid-item19{ grid-area: 4 / 5 / 5 / 6;}
+.grid-item20{ grid-area: 2 / 3 / 3 / 4;}
+.end{
+ text-align: center;
+ display: inline-box;
+ margin:auto;
+}
+#end1{
+font-size : 50px;
+color : blue;
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class='header'>
+ <h1><b>CLICK THE NUMBERS AS QUICKLY AS YOU CAN</b></h1>
+</div>
+<br><br>
+<div class= 'wrapper1'>
+ <button class='demo2' onclick='StartTimer()'>READY</button>
+</div>
+<br><br>
+<div class='wrapper3' >
+ <label id='demo3'>00</label>:<label id='demo4'>00</label>
+</div>
+
+<br><br>
+<div class='grid-container'>
+  <div class='grid-item1' id='clickme1'>1</div> 
+  <div class='grid-item2' id='clickme2'>2</div>
+  <div class='grid-item3' id='clickme3'>3</div>
+  <div class='grid-item4' id='clickme4'>4</div>
+  <div class='grid-item5' id='clickme5'>5</div>
+  <div class='grid-item6' id='clickme6'>6</div>
+  <div class='grid-item7' id='clickme7'>7</div>
+  <div class='grid-item8' id='clickme8'>8</div>
+  <div class='grid-item9' id='clickme9'>9</div>
+  <div class='grid-item10' id='clickme10'>10</div>
+  <div class='grid-item11' id='clickme11'>11</div>
+  <div class='grid-item12' id='clickme12'>12</div>
+  <div class='grid-item13' id='clickme13'>13</div>
+  <div class='grid-item14' id='clickme14'>14</div>
+  <div class='grid-item15' id='clickme15'>15</div>
+  <div class='grid-item16' id='clickme16'>16</div>
+  <div class='grid-item17' id='clickme17'>17</div>
+  <div class='grid-item18' id='clickme18'>18</div>
+  <div class='grid-item19' id='clickme19'>19</div>
+  <div class='grid-item20' id='clickme20'>20</div>
+</div>
+<br><br>
+<div class='wrapper'>
+ <button class='wait1' onclick='stoptimer()'>STOP</button>
+</div><br><br>
+<div class = 'end'>
+ <h1 >BEST SCORE</h1>
+ <div id ='end1'>
+</div>
+</div>
+</body>
+<script>
+window.alert('HEY WELCOME \n This game is about how fast you click a number in ascending order and make the box empty\n No. of clicks increases every consecutive times');
+
+ 
+
+var timer = null;
+function StartTimer(){
+ var minutes = document.getElementById("demo3");
+ var seconds = document.getElementById("demo4");
+ var totalSecond = 0;
+ timer=setInterval(setTime, 1000);
+
+ function setTime() {
+   ++totalSecond;
+   seconds.innerHTML = checkin(totalSecond % 60);
+   minutes.innerHTML = checkin(parseInt(totalSecond / 60));
+ }
+
+ function checkin(val) {
+   var valString = val + "";
+   if (valString.length < 2) {
+     return "0" + valString;
+   } else {
+     return valString;
+  }
+ }
+ 
+}
+function stoptimer(){
+ clearInterval(timer);
+ if (typeof(Storage) !== "undefined") {
+  var array1 = localStorage.getItem("array1");
+  array1 = (array1) ? JSON.parse(array1) : [];
+  if (array1.length<=5){
+   document.getElementById("end1").innerHTML = localStorage.getItem("array1");
+   var x = document.getElementById("demo3").innerText;
+   var y = document.getElementById("demo4").innerText;
+   var w = parseInt(x)*60+parseInt(y);
+   array1.push(w);
+   localStorage.setItem("array1", JSON.stringify(array1));
+   var z = Math.min.apply(null,array1);
+   var l = parseInt(z/60)+':'+ z%60;
+   document.getElementById("end1").innerHTML = l;
+  }else{
+   array1.sort(function(a,b){return b-a});
+   array1.splice(5);
+   document.getElementById("end1").innerHTML = localStorage.getItem("array1");
+   var x = document.getElementById("demo3").innerText;
+   var y = document.getElementById("demo4").innerText;
+   var w = parseInt(x)*60+parseInt(y);
+   array1.push(w);
+   localStorage.setItem("array1", JSON.stringify(array1));
+   var z = Math.min.apply(null,array1);
+   var l = parseInt(z/60)+':'+ z%60;
+   document.getElementById("end1").innerHTML = l;
+   }
+} else {
+  document.getElementById("end1").innerHTML = "Sorry, your browser does not support Web Storage...";
+} 
+
+
+
+ 
+}
+var button1 = document.getElementById("clickme1")
+button1.addEventListener("click", function myfunction() {
+  
+  button1.innerHTML= 21;
+});
+
+button1.addEventListener("dblclick", function myfunction() {
+ 
+  button1.innerHTML= '';
+});
+/*newcode*/
+var button2 = document.getElementById("clickme2")
+button2.addEventListener("click", function myfunction() {
+  
+  button2.innerHTML= 22;
+});
+
+button2.addEventListener("dblclick", function myfunction() {
+ 
+  button2.innerHTML= '';
+});
+/*newcode*/
+var button3 = document.getElementById("clickme3")
+button3.addEventListener("click", function myfunction() {
+  
+  button3.innerHTML= 23;
+});
+
+button3.addEventListener("dblclick", function myfunction() {
+ 
+  button3.innerHTML= '';
+});
+/*newcode*/
+var button4 = document.getElementById("clickme4")
+button4.addEventListener("click", function myfunction() {
+  
+  button4.innerHTML= 24;
+});
+
+button4.addEventListener("dblclick", function myfunction() {
+ 
+  button4.innerHTML= '';
+});
+/*newcode*/
+var button5 = document.getElementById("clickme5")
+button5.addEventListener("click", function myfunction() {
+  
+  button5.innerHTML= 25;
+});
+
+button5.addEventListener("dblclick", function myfunction() {
+ 
+  button5.innerHTML= '';
+});
+/*newcode*/
+var button6 = document.getElementById("clickme6")
+button6.addEventListener("click", function myfunction() {
+  
+  button6.innerHTML= 26;
+});
+
+button6.addEventListener("dblclick", function myfunction() {
+ 
+  button6.innerHTML= '';
+});
+/*newcode*/
+var button7 = document.getElementById("clickme7")
+button7.addEventListener("click", function myfunction() {
+  
+  button7.innerHTML= 27;
+});
+
+button7.addEventListener("dblclick", function myfunction() {
+ 
+  button7.innerHTML= '';
+});
+/*newcode*/
+var button8 = document.getElementById("clickme8")
+button8.addEventListener("click", function myfunction() {
+  
+  button8.innerHTML= 28;
+});
+
+button8.addEventListener("dblclick", function myfunction() {
+ 
+  button8.innerHTML= '';
+});
+/*newcode*/
+var button9 = document.getElementById("clickme9")
+button9.addEventListener("click", function myfunction() {
+  
+  button9.innerHTML= 29;
+});
+
+button9.addEventListener("dblclick", function myfunction() {
+ 
+  button9.innerHTML= '';
+});
+/*newcode*/
+var button10 = document.getElementById("clickme10")
+button10.addEventListener("click", function myfunction() {
+  
+  button10.innerHTML= 30;
+});
+
+button10.addEventListener("dblclick", function myfunction() {
+ 
+  button10.innerHTML= '';
+});
+/*newcode*/
+var button11 = document.getElementById("clickme11")
+button11.addEventListener("click", function myfunction() {
+  
+  button11.innerHTML= 31;
+});
+
+button11.addEventListener("dblclick", function myfunction() {
+ 
+  button11.innerHTML= '';
+});
+/*newcode*/
+var button12 = document.getElementById("clickme12")
+button12.addEventListener("click", function myfunction() {
+  
+  button12.innerHTML= 32;
+});
+
+button12.addEventListener("dblclick", function myfunction() {
+ 
+  button12.innerHTML= '';
+});
+/*newcode*/
+var button13 = document.getElementById("clickme13")
+button13.addEventListener("click", function myfunction() {
+  
+  button13.innerHTML= 33;
+});
+
+button13.addEventListener("dblclick", function myfunction() {
+ 
+  button13.innerHTML= '';
+});
+/*newcode*/
+var button14 = document.getElementById("clickme14")
+button14.addEventListener("click", function myfunction() {
+  
+  button14.innerHTML= 34;
+});
+
+button14.addEventListener("dblclick", function myfunction() {
+ 
+  button14.innerHTML= '';
+});
+/*newcode*/
+var button15 = document.getElementById("clickme15")
+button15.addEventListener("click", function myfunction() {
+  
+  button15.innerHTML= 35;
+});
+
+button15.addEventListener("dblclick", function myfunction() {
+ 
+  button15.innerHTML= '';
+});
+/*newcode*/
+var button16 = document.getElementById("clickme16")
+button16.addEventListener("click", function myfunction() {
+  
+  button16.innerHTML= 36;
+});
+
+button16.addEventListener("dblclick", function myfunction() {
+ 
+  button16.innerHTML= '';
+});
+/*newcode*/
+var button17 = document.getElementById("clickme17")
+button17.addEventListener("click", function myfunction() {
+  
+  button17.innerHTML= 37;
+});
+
+button17.addEventListener("dblclick", function myfunction() {
+ 
+  button17.innerHTML= '';
+});
+/*newcode*/
+var button18 = document.getElementById("clickme18")
+button18.addEventListener("click", function myfunction() {
+  
+  button18.innerHTML= 38;
+});
+
+button18.addEventListener("dblclick", function myfunction() {
+ 
+  button18.innerHTML= '';
+});
+/*newcode*/
+var button19 = document.getElementById("clickme19")
+button19.addEventListener("click", function myfunction() {
+  
+  button19.innerHTML= 39;
+});
+
+button19.addEventListener("dblclick", function myfunction() {
+ 
+  button19.innerHTML= '';
+});
+/*newcode*/
+var button20 = document.getElementById("clickme20")
+button20.addEventListener("click", function myfunction() {
+  
+  button20.innerHTML= 40;
+});
+
+button20.addEventListener("dblclick", function myfunction() {
+ 
+  button20.innerHTML= '';
+});
+
+
+</script>
+</html>
