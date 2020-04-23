@@ -28,66 +28,7 @@ html{
  background-color:#ccff00;
  max-width: 100% ;
 }
-.grid-item1:hover{
- background-color:#f0e3d0 ;
-}
-.grid-item2:hover{
- background-color:#e9d4b7 ;
-}
-.grid-item3:hover{
- background-color:#e1c59d ;
-}
-.grid-item4:hover{
- background-color:#d9b684 ;
-}
-.grid-item5:hover{
- background-color:#d6af78 ;
-}
-.grid-item6:hover{
- background-color:#d2a76b ;
-}
-.grid-item7:hover{
- background-color:#cea05f ;
-}
-.grid-item8:hover{
- background-color:#ca9852 ;
-}
-.grid-item9:hover{
- background-color:#c69146;
-}
-.grid-item10:hover{
- background-color:#c2893a ;
-}
-.grid-item11:hover{
- background-color:#b58037 ;
-}
-.grid-item12:hover{
- background-color:#a97833;
-}
-.grid-item13:hover{
- background-color:#9c6f2f ;
-}
-.grid-item14:hover{
- background-color:#8f662b ;
-}
-.grid-item15:hover{
- background-color:#835d27 ;
-}
-.grid-item16:hover{
- background-color:#765424;
-}
-.grid-item17:hover{
- background-color:#6a4b20 ;
-}
-.grid-item18:hover{
- background-color:#5d421c;
-}
-.grid-item19:hover{
- background-color:#513918 ;
-}
-.grid-item20:hover{
- background-color:#443014 ;
-}
+
 .grid-container{
  display:grid;
  grid-template-columns: auto auto auto auto auto;
@@ -102,7 +43,9 @@ html{
  font-size:30px;
  text-align:center;
 }
-
+.grid-item:hover{
+background-color:#CCFF00;
+}
 .grid-container > div {
  background-color:#939393;
  text-align:center;
@@ -165,26 +108,7 @@ html{
  text-align:center;
  font-size:40px;
 }
-.grid-item1{ grid-area: 3 / 2 / 4 / 3;}
-.grid-item2{ grid-area: 1 / 5 / 2 / 6;}
-.grid-item3{ grid-area: 4 / 1 / 5 / 2;}
-.grid-item4{ grid-area: 3 / 5 / 4 / 6;}
-.grid-item5{ grid-area: 4 / 4 / 5 / 5;}
-.grid-item6{ grid-area: 2 / 1 / 3 / 2;}
-.grid-item7{ grid-area: 4 / 3 / 5 / 4;}
-.grid-item8{ grid-area: 1 / 1 / 2 / 2;}
-.grid-item9{ grid-area: 3 / 4 / 4 / 5;}
-.grid-item10{ grid-area: 4 / 2 / 5 / 3;}
-.grid-item11{ grid-area: 1 / 3 / 2 / 4;}
-.grid-item12{ grid-area: 3 / 1 / 4 / 2;}
-.grid-item13{ grid-area: 2 / 5 / 3 / 6;}
-.grid-item14{ grid-area: 1 / 2 / 2 / 3;}
-.grid-item15{ grid-area: 2 / 4 / 3 / 5;}
-.grid-item16{ grid-area: 1 / 4 / 2 / 5;}
-.grid-item17{ grid-area: 2 / 2 / 3 / 3;}
-.grid-item18{ grid-area: 3 / 3 / 4 / 4;}
-.grid-item19{ grid-area: 4 / 5 / 5 / 6;}
-.grid-item20{ grid-area: 2 / 3 / 3 / 4;}
+
 .end{
  text-align: center;
  display: inline-box;
@@ -202,6 +126,7 @@ color : blue;
 </head>
 <body>
 
+
 <div class='header'>
  <h1><b>CLICK THE NUMBERS AS QUICKLY AS YOU CAN</b></h1>
 </div>
@@ -216,26 +141,26 @@ color : blue;
 
 <br><br>
 <div class='grid-container'>
-  <div class='grid-item1' id='clickme1'>1</div> 
-  <div class='grid-item2' id='clickme2'>2</div>
-  <div class='grid-item3' id='clickme3'>3</div>
-  <div class='grid-item4' id='clickme4'>4</div>
-  <div class='grid-item5' id='clickme5'>5</div>
-  <div class='grid-item6' id='clickme6'>6</div>
-  <div class='grid-item7' id='clickme7'>7</div>
-  <div class='grid-item8' id='clickme8'>8</div>
-  <div class='grid-item9' id='clickme9'>9</div>
-  <div class='grid-item10' id='clickme10'>10</div>
-  <div class='grid-item11' id='clickme11'>11</div>
-  <div class='grid-item12' id='clickme12'>12</div>
-  <div class='grid-item13' id='clickme13'>13</div>
-  <div class='grid-item14' id='clickme14'>14</div>
-  <div class='grid-item15' id='clickme15'>15</div>
-  <div class='grid-item16' id='clickme16'>16</div>
-  <div class='grid-item17' id='clickme17'>17</div>
-  <div class='grid-item18' id='clickme18'>18</div>
-  <div class='grid-item19' id='clickme19'>19</div>
-  <div class='grid-item20' id='clickme20'>20</div>
+  <div class='grid-item' id='clickme1'></div> 
+  <div class='grid-item' id='clickme2'></div>
+  <div class='grid-item' id='clickme3'></div>
+  <div class='grid-item' id='clickme4'></div>
+  <div class='grid-item' id='clickme5'></div>
+  <div class='grid-item' id='clickme6'></div>
+  <div class='grid-item' id='clickme7'></div>
+  <div class='grid-item' id='clickme8'></div>
+  <div class='grid-item' id='clickme9'></div>
+  <div class='grid-item' id='clickme10'></div>
+  <div class='grid-item' id='clickme11'></div>
+  <div class='grid-item' id='clickme12'></div>
+  <div class='grid-item' id='clickme13'></div>
+  <div class='grid-item' id='clickme14'></div>
+  <div class='grid-item' id='clickme15'></div>
+  <div class='grid-item' id='clickme16'></div>
+  <div class='grid-item' id='clickme17'></div>
+  <div class='grid-item' id='clickme18'></div>
+  <div class='grid-item' id='clickme19'></div>
+  <div class='grid-item' id='clickme20'></div>
 </div>
 <br><br>
 <div class='wrapper'>
@@ -249,6 +174,38 @@ color : blue;
 </body>
 <script>
 window.alert('HEY WELCOME \n This game is about how fast you click a number in ascending order and make the box empty\n No. of clicks increases every consecutive times');
+
+var nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+}
+
+document.getElementById('clickme1').innerHTML = ranNums[0]; 
+document.getElementById('clickme2').innerHTML = ranNums[1]; 
+document.getElementById('clickme3').innerHTML = ranNums[2]; 
+document.getElementById('clickme4').innerHTML = ranNums[3]; 
+document.getElementById('clickme5').innerHTML = ranNums[4]; 
+document.getElementById('clickme6').innerHTML = ranNums[5]; 
+document.getElementById('clickme7').innerHTML = ranNums[6]; 
+document.getElementById('clickme8').innerHTML = ranNums[7]; 
+document.getElementById('clickme9').innerHTML = ranNums[8]; 
+document.getElementById('clickme10').innerHTML = ranNums[9]; 
+document.getElementById('clickme11').innerHTML = ranNums[10]; 
+document.getElementById('clickme12').innerHTML = ranNums[11]; 
+document.getElementById('clickme13').innerHTML = ranNums[12]; 
+document.getElementById('clickme14').innerHTML = ranNums[13]; 
+document.getElementById('clickme15').innerHTML = ranNums[14]; 
+document.getElementById('clickme16').innerHTML = ranNums[15]; 
+document.getElementById('clickme17').innerHTML = ranNums[16]; 
+document.getElementById('clickme18').innerHTML = ranNums[17]; 
+document.getElementById('clickme19').innerHTML = ranNums[18]; 
+document.getElementById('clickme20').innerHTML = ranNums[19]; 
 
  
 
@@ -306,15 +263,21 @@ function stoptimer(){
 } else {
   document.getElementById("end1").innerHTML = "Sorry, your browser does not support Web Storage...";
 } 
+}
+var nums1 = [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+    ranNums1 = [],
+    k = nums1.length,
+    l = 0;
 
-
-
- 
+while (k--) {
+    l = Math.floor(Math.random() * (k+1));
+    ranNums1.push(nums1[l]);
+    nums1.splice(l,1);
 }
 var button1 = document.getElementById("clickme1")
 button1.addEventListener("click", function myfunction() {
   
-  button1.innerHTML= 21;
+  button1.innerHTML= ranNums1[0];
 });
 
 button1.addEventListener("dblclick", function myfunction() {
@@ -325,7 +288,7 @@ button1.addEventListener("dblclick", function myfunction() {
 var button2 = document.getElementById("clickme2")
 button2.addEventListener("click", function myfunction() {
   
-  button2.innerHTML= 22;
+  button2.innerHTML= ranNums1[1];
 });
 
 button2.addEventListener("dblclick", function myfunction() {
@@ -336,7 +299,7 @@ button2.addEventListener("dblclick", function myfunction() {
 var button3 = document.getElementById("clickme3")
 button3.addEventListener("click", function myfunction() {
   
-  button3.innerHTML= 23;
+  button3.innerHTML= ranNums1[2];
 });
 
 button3.addEventListener("dblclick", function myfunction() {
@@ -347,7 +310,7 @@ button3.addEventListener("dblclick", function myfunction() {
 var button4 = document.getElementById("clickme4")
 button4.addEventListener("click", function myfunction() {
   
-  button4.innerHTML= 24;
+  button4.innerHTML= ranNums1[3];
 });
 
 button4.addEventListener("dblclick", function myfunction() {
@@ -358,7 +321,7 @@ button4.addEventListener("dblclick", function myfunction() {
 var button5 = document.getElementById("clickme5")
 button5.addEventListener("click", function myfunction() {
   
-  button5.innerHTML= 25;
+  button5.innerHTML= ranNums1[4];
 });
 
 button5.addEventListener("dblclick", function myfunction() {
@@ -369,7 +332,7 @@ button5.addEventListener("dblclick", function myfunction() {
 var button6 = document.getElementById("clickme6")
 button6.addEventListener("click", function myfunction() {
   
-  button6.innerHTML= 26;
+  button6.innerHTML= ranNums1[5];
 });
 
 button6.addEventListener("dblclick", function myfunction() {
@@ -380,7 +343,7 @@ button6.addEventListener("dblclick", function myfunction() {
 var button7 = document.getElementById("clickme7")
 button7.addEventListener("click", function myfunction() {
   
-  button7.innerHTML= 27;
+  button7.innerHTML= ranNums1[6];
 });
 
 button7.addEventListener("dblclick", function myfunction() {
@@ -391,7 +354,7 @@ button7.addEventListener("dblclick", function myfunction() {
 var button8 = document.getElementById("clickme8")
 button8.addEventListener("click", function myfunction() {
   
-  button8.innerHTML= 28;
+  button8.innerHTML= ranNums1[7];
 });
 
 button8.addEventListener("dblclick", function myfunction() {
@@ -402,7 +365,7 @@ button8.addEventListener("dblclick", function myfunction() {
 var button9 = document.getElementById("clickme9")
 button9.addEventListener("click", function myfunction() {
   
-  button9.innerHTML= 29;
+  button9.innerHTML= ranNums1[8];
 });
 
 button9.addEventListener("dblclick", function myfunction() {
@@ -413,7 +376,7 @@ button9.addEventListener("dblclick", function myfunction() {
 var button10 = document.getElementById("clickme10")
 button10.addEventListener("click", function myfunction() {
   
-  button10.innerHTML= 30;
+  button10.innerHTML= ranNums1[9];
 });
 
 button10.addEventListener("dblclick", function myfunction() {
@@ -424,7 +387,7 @@ button10.addEventListener("dblclick", function myfunction() {
 var button11 = document.getElementById("clickme11")
 button11.addEventListener("click", function myfunction() {
   
-  button11.innerHTML= 31;
+  button11.innerHTML= ranNums1[10];
 });
 
 button11.addEventListener("dblclick", function myfunction() {
@@ -435,7 +398,7 @@ button11.addEventListener("dblclick", function myfunction() {
 var button12 = document.getElementById("clickme12")
 button12.addEventListener("click", function myfunction() {
   
-  button12.innerHTML= 32;
+  button12.innerHTML= ranNums1[11];
 });
 
 button12.addEventListener("dblclick", function myfunction() {
@@ -446,7 +409,7 @@ button12.addEventListener("dblclick", function myfunction() {
 var button13 = document.getElementById("clickme13")
 button13.addEventListener("click", function myfunction() {
   
-  button13.innerHTML= 33;
+  button13.innerHTML= ranNums1[12];
 });
 
 button13.addEventListener("dblclick", function myfunction() {
@@ -457,7 +420,7 @@ button13.addEventListener("dblclick", function myfunction() {
 var button14 = document.getElementById("clickme14")
 button14.addEventListener("click", function myfunction() {
   
-  button14.innerHTML= 34;
+  button14.innerHTML= ranNums1[13];
 });
 
 button14.addEventListener("dblclick", function myfunction() {
@@ -468,7 +431,7 @@ button14.addEventListener("dblclick", function myfunction() {
 var button15 = document.getElementById("clickme15")
 button15.addEventListener("click", function myfunction() {
   
-  button15.innerHTML= 35;
+  button15.innerHTML= ranNums1[14];
 });
 
 button15.addEventListener("dblclick", function myfunction() {
@@ -479,7 +442,7 @@ button15.addEventListener("dblclick", function myfunction() {
 var button16 = document.getElementById("clickme16")
 button16.addEventListener("click", function myfunction() {
   
-  button16.innerHTML= 36;
+  button16.innerHTML= ranNums1[15];
 });
 
 button16.addEventListener("dblclick", function myfunction() {
@@ -490,7 +453,7 @@ button16.addEventListener("dblclick", function myfunction() {
 var button17 = document.getElementById("clickme17")
 button17.addEventListener("click", function myfunction() {
   
-  button17.innerHTML= 37;
+  button17.innerHTML= ranNums1[16];
 });
 
 button17.addEventListener("dblclick", function myfunction() {
@@ -501,7 +464,7 @@ button17.addEventListener("dblclick", function myfunction() {
 var button18 = document.getElementById("clickme18")
 button18.addEventListener("click", function myfunction() {
   
-  button18.innerHTML= 38;
+  button18.innerHTML= ranNums1[17];
 });
 
 button18.addEventListener("dblclick", function myfunction() {
@@ -512,7 +475,7 @@ button18.addEventListener("dblclick", function myfunction() {
 var button19 = document.getElementById("clickme19")
 button19.addEventListener("click", function myfunction() {
   
-  button19.innerHTML= 39;
+  button19.innerHTML= ranNums1[18];
 });
 
 button19.addEventListener("dblclick", function myfunction() {
@@ -523,7 +486,7 @@ button19.addEventListener("dblclick", function myfunction() {
 var button20 = document.getElementById("clickme20")
 button20.addEventListener("click", function myfunction() {
   
-  button20.innerHTML= 40;
+  button20.innerHTML= ranNums1[19];
 });
 
 button20.addEventListener("dblclick", function myfunction() {
