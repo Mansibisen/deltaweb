@@ -30,7 +30,7 @@ html{
 }
 
 .grid-container{
- display:grid;
+ 
  grid-template-columns: auto auto auto auto auto;
  grid-gap : 10px;
  width:100%;
@@ -140,7 +140,7 @@ color : blue;
 </div>
 
 <br><br>
-<div class='grid-container'>
+<div class='grid-container' style='display:none;'}>
   <div class='grid-item' id='clickme1'></div> 
   <div class='grid-item' id='clickme2'></div>
   <div class='grid-item' id='clickme3'></div>
@@ -173,7 +173,7 @@ color : blue;
 </div>
 </body>
 <script>
-window.alert('HEY WELCOME \n This game is about how fast you click a number in ascending order and make the box empty\n No. of clicks increases every consecutive times');
+window.alert('HEY WELCOME \n This game is about how fast you click a number in ascending order and make the box empty');
 
 var nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
     ranNums = [],
@@ -206,11 +206,469 @@ document.getElementById('clickme17').innerHTML = ranNums[16];
 document.getElementById('clickme18').innerHTML = ranNums[17]; 
 document.getElementById('clickme19').innerHTML = ranNums[18]; 
 document.getElementById('clickme20').innerHTML = ranNums[19]; 
+for(i=0;i<ranNums.length;i++){
+  if(ranNums[i]==1){
+    var x = document.getElementById('clickme'+(i+1))
+    x.addEventListener("click", function myfunction() {
+  
+      x.innerHTML= 21;
+      for(i=0;i<ranNums.length;i++){
+        if(ranNums[i]===2){
+        var y = document.getElementById("clickme"+(i+1))
+        y.addEventListener("click", function myfunction() {
+  
+        y.innerHTML= 22;
+        for(i=0;i<ranNums.length;i++){
+          if(ranNums[i]===3){
+            var z = document.getElementById("clickme"+(i+1))
+            z.addEventListener("click", function myfunction() {
+  
+             z.innerHTML= 23;
+             for(i=0;i<ranNums.length;i++){
+              if(ranNums[i]===4){
+                var a = document.getElementById("clickme"+(i+1))
+                a.addEventListener("click", function myfunction() {
+  
+                a.innerHTML= 24;
+                for(i=0;i<ranNums.length;i++){
+                 if(ranNums[i]===5){
+                   var b = document.getElementById("clickme"+(i+1))
+                   b.addEventListener("click", function myfunction() {
+  
+                   b.innerHTML= 25;
+                   for(i=0;i<ranNums.length;i++){
+                    if(ranNums[i]===6){
+                     var c = document.getElementById("clickme"+(i+1))
+                     c.addEventListener("click", function myfunction() {
+  
+                     c.innerHTML= 26;
+                     for(i=0;i<ranNums.length;i++){
+                      if(ranNums[i]===7){
+                       var d = document.getElementById("clickme"+(i+1))
+                       d.addEventListener("click", function myfunction() {
+  
+                       d.innerHTML= 27;
+                       for(i=0;i<ranNums.length;i++){
+                        if(ranNums[i]===8){
+                          var e = document.getElementById("clickme"+(i+1))
+                          e.addEventListener("click", function myfunction() {
+  
+                          e.innerHTML= 28;
+                          for(i=0;i<ranNums.length;i++){
+                           if(ranNums[i]===9){
+                            var f = document.getElementById("clickme"+(i+1))
+                            f.addEventListener("click", function myfunction() {
+  
+                            f.innerHTML= 29;
+                            for(i=0;i<ranNums.length;i++){
+                             if(ranNums[i]===10){
+                               var g = document.getElementById("clickme"+(i+1))
+                               g.addEventListener("click", function myfunction() {
+  
+                               g.innerHTML= 30;
+                               for(i=0;i<ranNums.length;i++){
+                                if(ranNums[i]===11){
+                                 var h = document.getElementById("clickme"+(i+1))
+                                 h.addEventListener("click", function myfunction() {
+  
+                                 h.innerHTML= 31;
+                                 for(i=0;i<ranNums.length;i++){
+                                  if(ranNums[i]===12){
+                                   var k = document.getElementById("clickme"+(i+1))
+                                   k.addEventListener("click", function myfunction() {
+  
+                                   k.innerHTML= 32;
+                                   for(i=0;i<ranNums.length;i++){
+                                    if(ranNums[i]===13){
+                                     var l = document.getElementById("clickme"+(i+1))
+                                     l.addEventListener("click", function myfunction() {
+  
+                                     l.innerHTML= 33;
+                                     for(i=0;i<ranNums.length;i++){
+                                      if(ranNums[i]===14){
+                                       var m = document.getElementById("clickme"+(i+1))
+                                       m.addEventListener("click", function myfunction() {
+  
+                                       m.innerHTML= 34;
+                                       for(i=0;i<ranNums.length;i++){
+                                        if(ranNums[i]===15){
+                                          var n = document.getElementById("clickme"+(i+1))
+                                          n.addEventListener("click", function myfunction() {
+  
+                                          n.innerHTML= 35;
+                                          for(i=0;i<ranNums.length;i++){
+                                           if(ranNums[i]===16){
+                                            var p = document.getElementById("clickme"+(i+1))
+                                            p.addEventListener("click", function myfunction() {
+  
+                                             p.innerHTML= 36;
+                                             for(i=0;i<ranNums.length;i++){
+                                              if(ranNums[i]===17){
+                                                var q = document.getElementById("clickme"+(i+1))
+                                                q.addEventListener("click", function myfunction() {
+  
+                                                q.innerHTML= 37;
+                                                for(i=0;i<ranNums.length;i++){
+                                                 if(ranNums[i]===18){
+                                                  var r = document.getElementById("clickme"+(i+1))
+                                                  r.addEventListener("click", function myfunction() {
+  
+                                                  r.innerHTML= 38;
+                                                  for(i=0;i<ranNums.length;i++){
+                                                   if(ranNums[i]===19){
+                                                    var s = document.getElementById("clickme"+(i+1))
+                                                    s.addEventListener("click", function myfunction() {
+  
+                                                    s.innerHTML= 39;
+                                                    for(i=0;i<ranNums.length;i++){
+                                                     if(ranNums[i]===20){
+                                                       var t = document.getElementById("clickme"+(i+1))
+                                                       t.addEventListener("click", function myfunction() {
+  
+                                                       t.innerHTML= 40;
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                      
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       for(j=0;j<20;j++){
+                                                         var x1 = document.getElementById('clickme'+(j+1));
+                                                         if (x1.innerText ==21){
+                                                           var t1 = document.getElementById('clickme'+(j+1));
+                                                           t1.addEventListener("click",function secondfunction(){
+                                                             t1.innerHTML = "*";
+                                                             for(j=0;j<20;j++){
+                                                               var x2 = document.getElementById('clickme'+(j+1));
+                                                               if (x2.innerText ==22){
+                                                                 var t2 = document.getElementById('clickme'+(j+1));
+                                                                 t2.addEventListener("click",function secondfunction(){
+                                                                  t2.innerHTML = "*";
+                                                                  for(j=0;j<20;j++){
+                                                                    var x3 = document.getElementById('clickme'+(j+1));
+                                                                    if (x3.innerText ==23){
+                                                                      var t3 = document.getElementById('clickme'+(j+1));
+                                                                      t3.addEventListener("click",function secondfunction(){
+                                                                       t3.innerHTML = "*";
+                                                                       for(j=0;j<20;j++){
+                                                                         var x4 = document.getElementById('clickme'+(j+1));
+                                                                         if (x4.innerText ==24){
+                                                                           var t4 = document.getElementById('clickme'+(j+1));
+                                                                           t4.addEventListener("click",function secondfunction(){
+                                                                            t4.innerHTML = "*";
+                                                                            for(j=0;j<20;j++){
+                                                                              var x5 = document.getElementById('clickme'+(j+1));
+                                                                              if (x5.innerText ==25){
+                                                                               var t5 = document.getElementById('clickme'+(j+1));
+                                                                               t5.addEventListener("click",function secondfunction(){
+                                                                                 t5.innerHTML = "*";
+                                                                                 for(j=0;j<20;j++){
+                                                                                  var x6 = document.getElementById('clickme'+(j+1));
+                                                                                  if (x6.innerText ==26){
+                                                                                     var t6 = document.getElementById('clickme'+(j+1));
+                                                                                     t6.addEventListener("click",function secondfunction(){
+                                                                                       t6.innerHTML = "*";
+                                                                                       for(j=0;j<20;j++){
+                                                                                         var x7 = document.getElementById('clickme'+(j+1));
+                                                                                         if (x7.innerText ==27){
+                                                                                          var t7 = document.getElementById('clickme'+(j+1));
+                                                                                          t7.addEventListener("click",function secondfunction(){
+                                                                                            t7.innerHTML = "*";
+                                                                                            for(j=0;j<20;j++){
+                                                                                             var x8 = document.getElementById('clickme'+(j+1));
+                                                                                             if (x8.innerText ==28){
+                                                                                               var t8 = document.getElementById('clickme'+(j+1));
+                                                                                               t8.addEventListener("click",function secondfunction(){
+                                                                                                t8.innerHTML = "*";
+                                                                                                for(j=0;j<20;j++){
+                                                                                                 var x9 = document.getElementById('clickme'+(j+1));
+                                                                                                 if (x9.innerText ==29){
+                                                                                                  var t9 = document.getElementById('clickme'+(j+1));
+                                                                                                  t9.addEventListener("click",function secondfunction(){
+                                                                                                   t9.innerHTML = "*";
+                                                                                                   for(j=0;j<20;j++){
+                                                                                                    var x10 = document.getElementById('clickme'+(j+1));
+                                                                                                    if (x10.innerText ==30){
+                                                                                                    var t10 = document.getElementById('clickme'+(j+1));
+                                                                                                    t10.addEventListener("click",function secondfunction(){
+                                                                                                     t10.innerHTML = "*";
+                                                                                                     for(j=0;j<20;j++){
+                                                                                                      var x11 = document.getElementById('clickme'+(j+1));
+                                                                                                      if (x11.innerText ==31){
+                                                                                                       var t11 = document.getElementById('clickme'+(j+1));
+                                                                                                       t11.addEventListener("click",function secondfunction(){
+                                                                                                        t11.innerHTML = "*";
+                                                                                                        for(j=0;j<20;j++){
+                                                                                                         var x12 = document.getElementById('clickme'+(j+1));
+                                                                                                         if (x12.innerText ==32){
+                                                                                                           var t12 = document.getElementById('clickme'+(j+1));
+                                                                                                           t12.addEventListener("click",function secondfunction(){
+                                                                                                            t12.innerHTML = "*";
+                                                                                                            for(j=0;j<20;j++){
+                                                                                                             var x13 = document.getElementById('clickme'+(j+1));
+                                                                                                             if (x13.innerText ==33){
+                                                                                                               var t13 = document.getElementById('clickme'+(j+1));
+                                                                                                               t13.addEventListener("click",function secondfunction(){
+                                                                                                                t13.innerHTML = "*";
+                                                                                                                for(j=0;j<20;j++){
+                                                                                                                 var x14 = document.getElementById('clickme'+(j+1));
+                                                                                                                 if (x14.innerText ==34){
+                                                                                                                  var t14 = document.getElementById('clickme'+(j+1));
+                                                                                                                  t14.addEventListener("click",function secondfunction(){
+                                                                                                                   t14.innerHTML = "*";
+                                                                                                                   for(j=0;j<20;j++){
+                                                                                                                    var x15 = document.getElementById('clickme'+(j+1));
+                                                                                                                    if (x15.innerText ==35){
+                                                                                                                      var t15 = document.getElementById('clickme'+(j+1));
+                                                                                                                      t15.addEventListener("click",function secondfunction(){
+                                                                                                                       t15.innerHTML = "*";
+                                                                                                                       for(j=0;j<20;j++){
+                                                                                                                        var x16 = document.getElementById('clickme'+(j+1));
+                                                                                                                        if (x16.innerText ==36){
+                                                                                                                         var t16 = document.getElementById('clickme'+(j+1));
+                                                                                                                         t16.addEventListener("click",function secondfunction(){
+                                                                                                                          t16.innerHTML = "*";
+                                                                                                                          for(j=0;j<20;j++){
+                                                                                                                           var x17 = document.getElementById('clickme'+(j+1));
+                                                                                                                           if (x17.innerText ==37){
+                                                                                                                            var t17 = document.getElementById('clickme'+(j+1));
+                                                                                                                            t17.addEventListener("click",function secondfunction(){
+                                                                                                                             t17.innerHTML = "*";
+                                                                                                                             for(j=0;j<20;j++){
+                                                                                                                              var x18 = document.getElementById('clickme'+(j+1));
+                                                                                                                              if (x18.innerText ==38){
+                                                                                                                               var t18 = document.getElementById('clickme'+(j+1));
+                                                                                                                               t18.addEventListener("click",function secondfunction(){
+                                                                                                                                t18.innerHTML = "*";
+                                                                                                                                for(j=0;j<20;j++){
+                                                                                                                                 var x19 = document.getElementById('clickme'+(j+1));
+                                                                                                                                 if (x19.innerText ==39){
+                                                                                                                                  var t19 = document.getElementById('clickme'+(j+1));
+                                                                                                                                  t19.addEventListener("click",function secondfunction(){
+                                                                                                                                   t19.innerHTML = "*";
+                                                                                                                                   for(j=0;j<20;j++){
+                                                                                                                                    var x20 = document.getElementById('clickme'+(j+1));
+                                                                                                                                    if (x20.innerText ==40){
+                                                                                                                                     var t20 = document.getElementById('clickme'+(j+1));
+                                                                                                                                     t20.addEventListener("click",function secondfunction(){
+                                                                                                                                      t20.innerHTML = "*";
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+
+                                                             
+                                                           });
+                                                         }
+                                                       }    
+
+                                                           });
+                                                         }
+                                                       }    
+                                                           
+                                                               
+                                                           
+                                 
+                                                       
+                                                       
+                                                         
+                                                         
+                                                         
+                                                           
+  
+                                                               
+                                                                
+                                                        
+                                                    
+});
+}
+}
+
+});
+}
+}
+
+});
+}
+}
+
+});
+}
+}
+
+});
+}
+}
+
+});
+}
+}
+});
+}
+}
+
+});
+}
+}
+});
+}
+}
+});
+}
+}
+});
+}
+}
+});
+}
+}
+});
+}
+}
+});
+}
+}
+});
+}
+}
+
+});
+}
+}
+});
+}
+}
+
+});
+}
+}
+
+});
+}
+}
+
+});
+}
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
 
  
 
 var timer = null;
 function StartTimer(){
+ 
+ var x = document.getElementsByClassName('grid-container')
+ for (i=0;i<x.length;i++){
+  x[i].style.display ='grid';
+ }
  var minutes = document.getElementById("demo3");
  var seconds = document.getElementById("demo4");
  var totalSecond = 0;
@@ -264,236 +722,9 @@ function stoptimer(){
   document.getElementById("end1").innerHTML = "Sorry, your browser does not support Web Storage...";
 } 
 }
-var nums1 = [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
-    ranNums1 = [],
-    k = nums1.length,
-    l = 0;
 
-while (k--) {
-    l = Math.floor(Math.random() * (k+1));
-    ranNums1.push(nums1[l]);
-    nums1.splice(l,1);
-}
-var button1 = document.getElementById("clickme1")
-button1.addEventListener("click", function myfunction() {
   
-  button1.innerHTML= ranNums1[0];
-});
-
-button1.addEventListener("dblclick", function myfunction() {
- 
-  button1.innerHTML= '';
-});
-/*newcode*/
-var button2 = document.getElementById("clickme2")
-button2.addEventListener("click", function myfunction() {
   
-  button2.innerHTML= ranNums1[1];
-});
-
-button2.addEventListener("dblclick", function myfunction() {
- 
-  button2.innerHTML= '';
-});
-/*newcode*/
-var button3 = document.getElementById("clickme3")
-button3.addEventListener("click", function myfunction() {
-  
-  button3.innerHTML= ranNums1[2];
-});
-
-button3.addEventListener("dblclick", function myfunction() {
- 
-  button3.innerHTML= '';
-});
-/*newcode*/
-var button4 = document.getElementById("clickme4")
-button4.addEventListener("click", function myfunction() {
-  
-  button4.innerHTML= ranNums1[3];
-});
-
-button4.addEventListener("dblclick", function myfunction() {
- 
-  button4.innerHTML= '';
-});
-/*newcode*/
-var button5 = document.getElementById("clickme5")
-button5.addEventListener("click", function myfunction() {
-  
-  button5.innerHTML= ranNums1[4];
-});
-
-button5.addEventListener("dblclick", function myfunction() {
- 
-  button5.innerHTML= '';
-});
-/*newcode*/
-var button6 = document.getElementById("clickme6")
-button6.addEventListener("click", function myfunction() {
-  
-  button6.innerHTML= ranNums1[5];
-});
-
-button6.addEventListener("dblclick", function myfunction() {
- 
-  button6.innerHTML= '';
-});
-/*newcode*/
-var button7 = document.getElementById("clickme7")
-button7.addEventListener("click", function myfunction() {
-  
-  button7.innerHTML= ranNums1[6];
-});
-
-button7.addEventListener("dblclick", function myfunction() {
- 
-  button7.innerHTML= '';
-});
-/*newcode*/
-var button8 = document.getElementById("clickme8")
-button8.addEventListener("click", function myfunction() {
-  
-  button8.innerHTML= ranNums1[7];
-});
-
-button8.addEventListener("dblclick", function myfunction() {
- 
-  button8.innerHTML= '';
-});
-/*newcode*/
-var button9 = document.getElementById("clickme9")
-button9.addEventListener("click", function myfunction() {
-  
-  button9.innerHTML= ranNums1[8];
-});
-
-button9.addEventListener("dblclick", function myfunction() {
- 
-  button9.innerHTML= '';
-});
-/*newcode*/
-var button10 = document.getElementById("clickme10")
-button10.addEventListener("click", function myfunction() {
-  
-  button10.innerHTML= ranNums1[9];
-});
-
-button10.addEventListener("dblclick", function myfunction() {
- 
-  button10.innerHTML= '';
-});
-/*newcode*/
-var button11 = document.getElementById("clickme11")
-button11.addEventListener("click", function myfunction() {
-  
-  button11.innerHTML= ranNums1[10];
-});
-
-button11.addEventListener("dblclick", function myfunction() {
- 
-  button11.innerHTML= '';
-});
-/*newcode*/
-var button12 = document.getElementById("clickme12")
-button12.addEventListener("click", function myfunction() {
-  
-  button12.innerHTML= ranNums1[11];
-});
-
-button12.addEventListener("dblclick", function myfunction() {
- 
-  button12.innerHTML= '';
-});
-/*newcode*/
-var button13 = document.getElementById("clickme13")
-button13.addEventListener("click", function myfunction() {
-  
-  button13.innerHTML= ranNums1[12];
-});
-
-button13.addEventListener("dblclick", function myfunction() {
- 
-  button13.innerHTML= '';
-});
-/*newcode*/
-var button14 = document.getElementById("clickme14")
-button14.addEventListener("click", function myfunction() {
-  
-  button14.innerHTML= ranNums1[13];
-});
-
-button14.addEventListener("dblclick", function myfunction() {
- 
-  button14.innerHTML= '';
-});
-/*newcode*/
-var button15 = document.getElementById("clickme15")
-button15.addEventListener("click", function myfunction() {
-  
-  button15.innerHTML= ranNums1[14];
-});
-
-button15.addEventListener("dblclick", function myfunction() {
- 
-  button15.innerHTML= '';
-});
-/*newcode*/
-var button16 = document.getElementById("clickme16")
-button16.addEventListener("click", function myfunction() {
-  
-  button16.innerHTML= ranNums1[15];
-});
-
-button16.addEventListener("dblclick", function myfunction() {
- 
-  button16.innerHTML= '';
-});
-/*newcode*/
-var button17 = document.getElementById("clickme17")
-button17.addEventListener("click", function myfunction() {
-  
-  button17.innerHTML= ranNums1[16];
-});
-
-button17.addEventListener("dblclick", function myfunction() {
- 
-  button17.innerHTML= '';
-});
-/*newcode*/
-var button18 = document.getElementById("clickme18")
-button18.addEventListener("click", function myfunction() {
-  
-  button18.innerHTML= ranNums1[17];
-});
-
-button18.addEventListener("dblclick", function myfunction() {
- 
-  button18.innerHTML= '';
-});
-/*newcode*/
-var button19 = document.getElementById("clickme19")
-button19.addEventListener("click", function myfunction() {
-  
-  button19.innerHTML= ranNums1[18];
-});
-
-button19.addEventListener("dblclick", function myfunction() {
- 
-  button19.innerHTML= '';
-});
-/*newcode*/
-var button20 = document.getElementById("clickme20")
-button20.addEventListener("click", function myfunction() {
-  
-  button20.innerHTML= ranNums1[19];
-});
-
-button20.addEventListener("dblclick", function myfunction() {
- 
-  button20.innerHTML= '';
-});
-
-
+                                                       
 </script>
 </html>
